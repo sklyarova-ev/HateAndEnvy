@@ -538,20 +538,20 @@ screen about():
 
     ## Этот оператор включает игровое меню внутрь этого экрана. Дочерний vbox
     ## включён в порт просмотра внутри экрана игрового меню.
-    use game_menu(_("Об игре"), scroll="viewport"):
+    use game_menu(_("About Game"), scroll="viewport"):
 
         style_prefix "about"
 
         vbox:
 
             label "[config.name!t]"
-            text _("Версия [config.version!t]\n")
+            text _("Version [config.version!t]\n")
 
             ## gui.about обычно установлено в options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Сделано с помощью {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 ## Это переустанавливается в options.rpy для добавления текста на экран Об игре.
@@ -781,7 +781,7 @@ screen preferences():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Тест") action Play("voice", config.sample_voice)
+                                textbutton _("Test") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -1040,24 +1040,24 @@ screen keyboard_help():
 screen mouse_help():
 
     hbox:
-        label _("Левый клик")
-        text _("Прохождение диалогов, активация интерфейса.")
+        label _("left click")
+        text _("passing dialogs.")
 
     hbox:
-        label _("Клик колёсиком")
-        text _("Скрывает интерфейс пользователя.")
+        label _("click the wheel")
+        text _("hides the user interface.")
 
     hbox:
-        label _("Правый клик")
-        text _("Вход в игровое меню.")
+        label _("right click")
+        text _("entering the game menu.")
 
     hbox:
-        label _("Колёсико вверх\nКлик на сторону отката")
-        text _("Откат назад по сюжету игры.")
+        label _("wheel up\nClick on the rollback side")
+        text _("rolling back the plot.")
 
     hbox:
-        label _("Колёсико вниз")
-        text _("Откатывает предыдущее действие вперёд.")
+        label _("wheel down")
+        text _("rolls back the previous action forward.")
 
 
 screen gamepad_help():
@@ -1199,7 +1199,7 @@ screen skip_indicator():
         hbox:
             spacing 9
 
-            text _("Пропускаю")
+            text _("Skip")
 
             text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
             text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"

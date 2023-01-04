@@ -197,8 +197,6 @@ label start:
     scene bg sky2 evening
     with Dissolve(.25)
 
-    play music rg
-
     show ringo angry
     with Dissolve(.25)
 
@@ -210,6 +208,8 @@ label start:
 
     show ringo smile
     with Dissolve(.25)
+    
+    play music rg
 
     r "You're taking a break, right?"
 
@@ -379,11 +379,8 @@ label start:
     show paul smile
     with Dissolve(.25)
 
-    p "Ha"
-
     p "And finally you're here!"
     
-
 
     return
 
