@@ -20,6 +20,7 @@ init:
     $ left2 = Position (xalign=0.2, yalign=1.1)
     $ right2 = Position (xalign=0.8, yalign=1.1)
 
+
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
@@ -27,23 +28,16 @@ init:
 
 # Игра начинается здесь:
 label splashscreen:
-
+    
     scene black with dissolve
-    pause 1
-    show text "hello!" with dissolve
-    pause 4 
-    show text "I want to say that this story is just a fiction. I cannot vouch for the coincidence with the reality of everything that is happening!" with dissolve
-    pause 4
-    show text "The Beatles don't belong to me." with dissolve
-    pause 4
-    show text "Also, I want to warn you that there will be scenes of violence here. you are warned))" with dissolve
-    pause 4
-    show text "if you want to find me in social networks, then here is my tumblr: hhtps://at.tumblr.com/yasosumenyayebut" with dissolve
-    pause 4
-    show text "thank you in advance!<3" with dissolve
-    pause 4
+    scene start2 
+    with dissolve
+    pause 5
     scene black with dissolve
-    pause 1
+    scene start 
+    with dissolve
+    pause 15
+    scene black with dissolve
 
     return 
 

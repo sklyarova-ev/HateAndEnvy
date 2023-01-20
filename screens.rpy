@@ -9,6 +9,7 @@ init offset = -1
 ## Стили
 ################################################################################
 
+
 style default:
     properties gui.text_properties()
     language gui.language
@@ -349,23 +350,61 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+init python:
+
+    class TrackCursor(renpy.Displayable): 
+
+        def __init__(self, child, paramod, **kwargs):
+
+            super(TrackCursor, self).__init__()
+
+            self.child = renpy.displayable(child)
+
+            self.x = None
+            self.y = None
+            self.paramod = paramod
+
+        def render(self, width, height, st, at):
+
+            rv = renpy.Render(width, height)
+
+            if self.x is not None:
+                cr = renpy.render(self.child, width, height, st, at)
+                cw, ch = cr.get_size()
+                rv.blit(cr, (self.x, self.y))
+
+            return rv
+
+        def event(self, ev, x, y, st):
+
+            if (x != self.x) or (y != self.y):
+                self.x = -x /self.paramod
+                self.y = -y /self.paramod
+                renpy.redraw(self, 0)
+
 screen main_menu():
 
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
     ## заменять этот.
     tag menu
 
+    style_prefix "main_menu"
+
+    add TrackCursor("gui/main_menu_A.png",20)
+    add TrackCursor("gui/main_menu_B.png",13)
+    add TrackCursor("gui/main_menu_C.png", 30)
+    add TrackCursor("gui/main_menu_D.png",7)
+
     imagemap:
-        ground "gui/main_menu.png"
         idle "gui/menu_normal.png"
         hover "gui/menu_haver.png"
 
-        hotspot (51, 148, 224, 150) action Start ()
-        hotspot (44, 283, 189, 235) action ShowMenu ("load")
-        hotspot (55, 404, 346, 389) action ShowMenu ("preferences")
-        hotspot (45, 536, 419, 468) action ShowMenu ("about")
-        hotspot (25, 980, 268, 150) action Quit (confirm=True)
-        hotspot (1696, 946, 211, 1700) action ShowMenu ("help")
+        hotspot (371, 32, 728, 741) action Start ()
+        hotspot (337, 137, 620, 758) action ShowMenu ("preferences")
+        hotspot (487, 241, 517, 758) action ShowMenu ("load")
+        hotspot (784, 28, 1067, 1077) action ShowMenu ("about")
+        hotspot (490, 323, 438, 753) action Quit (confirm=True)
+        hotspot (0, 885, 484, 371) action ShowMenu ("help")
 
 
 style main_menu_frame is empty
