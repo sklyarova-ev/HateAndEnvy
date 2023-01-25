@@ -9,6 +9,9 @@ init offset = -1
 ## Стили
 ################################################################################
 
+init python:
+    config.mouse={}
+    config.mouse['default'] = [ ("gui/curs/pointer001.png", 0, 0) ]  
 
 style default:
     properties gui.text_properties()

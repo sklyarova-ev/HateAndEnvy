@@ -15,6 +15,7 @@ define audio.rg="music/rg.mp3"
 define audio.people="music/people.mp3"
 define audio.rest="music/rest.mp3"
 define audio.birds="music/birds.mp3"
+define audio.paulfirst="music/paulfirst.mp3"
 
 init:
     $ left2 = Position (xalign=0.2, yalign=1.1)
@@ -50,7 +51,7 @@ label start:
     
     window hide
     
-    j "{cps=10}{i}September 20,1967.{/i}"
+    j "{cps=10}{i}September 24,1967.{/i}"
     
 
     j "{cps=25}The year preceding the release of the Magical Mystery Tour album promises to be stormy."
@@ -374,7 +375,103 @@ label start:
     with Dissolve(.25)
 
     p "And finally you're here!"
-    
+
+    play music paulfirst
+
+    p "What you been doing?"
+
+    jo "I'm confused, just not now, please..."
+
+    john "I'm hungry and dizzy."
+
+    show paul angry
+    with Dissolve(.25)
+
+    p "Really? Cynthia was a little worried, you know."
+
+    jo "Paul looked upsed and I could feel his fears."
+
+    show paul angry2
+    with Dissolve(.25)
+
+    p "I'm tired of other people's questions"
+
+    p "Did I deserve it?"
+
+    show paul smile3
+    with Dissolve(.25)
+
+    p "But anyway, we're done!{w=1} I'm so glad."
+
+    show paul smileright
+    with Dissolve(.25)
+   
+    p "But we'll have to go back to London tonight and work again tomorrow..."
+
+    p "I'd be happy just to lie on the bed."
+
+    john "I thought you'd never get tired."
+
+    jo " He sighed and rolled his eyes when he realized with annoyance that he had to explain himself to me"
+
+    john "But hey!{w=1} We finished it quickly!"
+
+    john "It's only been a couple of weeks."
+
+    john "I haven't even had time to get used to the terrain."
+
+    p "Of course you didn't have time..."
+
+    stop music
+    pause 4
+
+    jo "There was silence."
+
+    pause 4
+
+    jo "I didn't fully understand what he meant."
+
+    pause 4
+
+    play music paulfirst
+
+    show paul smile
+    with Dissolve(.25)
+
+    p "Mel offered to celebrate this event in a restaurant."
+
+    p "Nothing grandiose, just to sit quietly and talk."
+
+    p "No one has the strength to have fun..."
+
+    show paul smile3
+    with Dissolve(.25)
+
+    p "Rings said he would spend the whole evening on the floor with an ice pack on his forehead."
+
+    p "But Geo will come. Strong guy."
+
+    show paul brush4
+    with Dissolve(.25)
+
+    p "What about you?"
+
+    show paul brush
+    with Dissolve(.25)
+
+    p "Of course I don't want to force you..."
+
+    jo "I sighed"
+
+    show paul brush4
+    with Dissolve(.25)
+
+    john "Okay...{w=1}It's all right.{w=1} I can't miss this opportunity."
+
+    p "Well,{w=1} It's better for you."
+
+    p "So, see you there!"
+
 
     return
 
