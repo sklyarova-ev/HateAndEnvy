@@ -73,8 +73,8 @@ define config.main_menu_music = "main-menu-theme.ogg"
 
 ## Вход и выход в игровое меню.
 
-define config.enter_transition = dissolve
-define config.exit_transition = dissolve
+define config.enter_transition = None
+define config.exit_transition = None
 
 
 ## Переход между экранами игрового меню.

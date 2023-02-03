@@ -8,6 +8,8 @@ define r = Character ('Ringo', color="#7d3472")
 define g = Character ('George', color="#802222")
 define e = Character ('???', color="#ffffff")
 define john = Character ('John', color="#ffffff")
+define c = Character ('Cynthia', color="#704709")
+
 
 define audio.car="music/car.mp3"
 define audio.dream="music/dream.mp3"
@@ -16,6 +18,9 @@ define audio.people="music/people.mp3"
 define audio.rest="music/rest.mp3"
 define audio.birds="music/birds.mp3"
 define audio.paulfirst="music/paulfirst.mp3"
+define audio.start="music/start.mp3"
+define audio.hotel="music/hotel.mp3"
+define audio.door="music/door.mp3"
 
 init:
     $ left2 = Position (xalign=0.2, yalign=1.1)
@@ -29,16 +34,16 @@ init:
 
 # Игра начинается здесь:
 label splashscreen:
-    
+
+    play music start
     scene black with dissolve
-    scene start2 
-    with dissolve
-    pause 5
+    scene start2 with fade
+    pause 3
     scene black with dissolve
-    scene start 
-    with dissolve
-    pause 15
+    scene start with fade
+    pause 4
     scene black with dissolve
+    stop music
 
     return 
 
@@ -365,6 +370,7 @@ label start:
 
     jo "A hand touched my shoulder..."
 
+    stop music
     scene black with dissolve
    
     e "John!"
@@ -423,15 +429,15 @@ label start:
     p "Of course you didn't have time..."
 
     stop music
-    pause 4
+    pause 2
 
     jo "There was silence."
 
-    pause 4
+    pause 2
 
     jo "I didn't fully understand what he meant."
 
-    pause 4
+    pause 2
 
     play music paulfirst
 
@@ -472,6 +478,187 @@ label start:
 
     p "So, see you there!"
 
+    hide paul with dissolve
+
+    pause 1
+
+    jo "Classic Paul invites me to such bollocks as this."
+
+    jo "If no one has the strenght, then why arrange this celebration?"
+
+    show bg sky evening
+    with Dissolve(.25)
+
+    pause 1
+
+    jo "I'm wondering what it will look like."
+
+    jo "Dozens of tired adults face in plates and with a full glass of wine in their hand..."
+
+    jo "It sounds like a lot of fun."
+
+    jo "But  first I'd like to go back to the apartment."
+
+    scene black with dissolve
+
+    pause 2
+
+    show bg hotel hallway evening
+    with Dissolve(.25)
+
+    jo "In recent years, people have become obsessed with minimalism and cubism."
+
+    jo "Artists, designers and architects."
+
+    jo "Probably, there is a future behind it."
+
+    jo "Stupid fashion, but I like it."
+
+    jo "All this looks so simple and does not irritate the eyes."
+
+    jo "But it is also unclear."
+
+    scene black with dissolve
+    play music door
+    show bg hallway with dissolve
+    play music hotel
+ 
+    jo "And the apartmenta here look in contrast with the corridor." 
+
+    jo "Damn,{w=1} why am I complaining?..."
+
+    jo "I have to say thanks that they don't use a combination of gold and red velvet here."
+
+    scene black with dissolve
+
+    e "Good evening, John."
+
+    john "Who's this?"
+
+    show bg hallway with dissolve
+    pause 2
+
+    show cyn angry with dissolve
+
+    c "It’s me. Cyn."
+
+    jo "This woman knows how to scare people."
+
+    john "Ah, crikey, Cyn, you made me jump."
+
+    john " For a moment I thought you were a fan breaking in or a ghost."
+
+    show cyn smile with dissolve
+
+    jo "She giggled."
+
+    john "Have you been hiding here or something?" 
+
+    show cyn smile3 with dissolve
+
+    c "I’ve just got out of the bathroom. Sorry, I didn’t mean to frighten you." 
+
+    john " Well, long time no see, hon. When did you get here?" 
+
+    show cyn smile with dissolve
+
+    c "We arrived about two hours ago.{w=1} Julian and I."
+
+    show cyn sad with dissolve 
+
+    c "I hoped you'd be waiting for us."
+
+    show cyn smile with dissolve
+
+    c "Last time we talked over the phone, we agreed you would meet us today, I believe."
+
+    john "I forgot."
+
+    show cyn brush with dissolve
+
+    c "Oh..."
+
+    john "We talked about it like three days ago."
+
+    john "You should’ve reminded me yesterday you were coming."
+
+    show cyn smile2 with dissolve
+
+    c "I want to."
+
+    c "But your line was engaged since our last call"
+
+    c "and the hotel staff who tried to deliver my message to you told me there was no reply as he knocked on your door yesterday evening."
+
+    show cyn brush with dissolve
+
+    c "Where were you?"
+
+    john "Here. In my suite. Where else would I be?"
+
+    c "I don’t know. Why didn’t you respond then? Were you OK?"
+
+    john "I didn’t hear anybody knocking."
+
+    john "Probably, I was just too busy restoring my strength after doing me best at my starring secondary role in the oncoming hit Beatles movie."
+
+    pause 2
+
+    show cyn smile2 with dissolve
+
+    c "Oh, John, you aren’t taking acid again, are you?"
+
+    john "Stop it, Cyn,{w=1} do me a favour."
+
+    john "If I wanted to answer stupid questions, I’d hold a press conference."
+
+    c "But still, are you?"
+
+    john "You know I’m done with it."
+
+    john "I spent the whole evening...{w=1} meditating"
+
+    john "Yes."
+
+    jo "I sighed."
+
+    john "Just what Maharishi ordered on a hard day’s night, you know."
+
+    john "Nothing interesting, anyway."
+
+    john "You better tell me how were things at home."
+
+    show cyn sad with dissolve 
+
+    c "We were fine aside from we were missing you badly."
+
+    c "Julian even draw a comic of you performing on stage with the band."
+
+    c "He’s brought it here to show you."
+
+    john "Where's him, by the way?"
+
+    show cyn smile2 with dissolve
+
+    c "He’s sleeping in the next room. The road wore him out."
+
+    john "Don't you want to have some rest too?"
+
+    john "There's another hour before dinner."
+
+    show cyn smile3 with dissolve
+
+    c "Maybe we'd better take a walk and you'd show me around?"
+
+    jo "Shit..."
+
+    john "Actually, I don't feel like going out at the moment"
+
+    show cyn sad with dissolve 
+
+    john "but you can go and ask Mal to keep you company."
+
+    john "I’ve seen him hanging around in the lobby just now."
 
     return
 

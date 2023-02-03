@@ -388,7 +388,7 @@ init python:
 screen main_menu():
 
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
-    ## заменять этот.
+    ## заменять этот.hotspot (784, 28, 1067, 1077) action ShowMenu ("about")
     tag menu
 
     style_prefix "main_menu"
@@ -405,7 +405,6 @@ screen main_menu():
         hotspot (371, 32, 728, 741) action Start ()
         hotspot (337, 137, 620, 758) action ShowMenu ("preferences")
         hotspot (487, 241, 517, 758) action ShowMenu ("load")
-        hotspot (784, 28, 1067, 1077) action ShowMenu ("about")
         hotspot (490, 323, 438, 753) action Quit (confirm=True)
         hotspot (0, 885, 484, 371) action ShowMenu ("help")
 

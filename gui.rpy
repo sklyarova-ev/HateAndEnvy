@@ -22,7 +22,7 @@ init python:
 ## Цвета текста в интерфейсе
 
 ## Акцентный цвет используется в заголовках и подчёркнутых текстах.
-define gui.accent_color = '#cc0066'
+define gui.accent_color = '#acadbd'
 
 ## Цвет, используемый в текстовой кнопке, когда она не выбрана и не наведена.
 define gui.idle_color = '#ffffff'
@@ -32,7 +32,7 @@ define gui.idle_color = '#ffffff'
 define gui.idle_small_color = '#ffffff'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#e066a3'
+define gui.hover_color = '#51565c'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
@@ -45,7 +45,7 @@ define gui.insensitive_color = '#8888887f'
 ## Цвета, используемые для частей панелей, которые не заполняются. Они
 ## используются не напрямую, а только при воссоздании файлов изображений.
 define gui.muted_color = '#510028'
-define gui.hover_muted_color = '#7a003d'
+define gui.hover_muted_color = '#2e2d40'
 
 ## Цвета, используемые в тексте диалогов и выборов.
 define gui.text_color = '#ffffff'
@@ -85,8 +85,8 @@ define gui.title_text_size = 75
 ## Главное и игровое меню. #####################################################
 
 ## Изображения, используемые в главном и игровом меню.
-define gui.main_menu_background = Movie(play="gui/vv.ogv", loop = True, size = (1920,1080))
-define gui.game_menu_background = Movie(play="gui/vv.ogv", loop = True, size = (1920,1080))
+define gui.main_menu_background = "gui/main_menu.png"
+define gui.game_menu_background = "gui/main_menu.png"
 
 
 ## Диалог ######################################################################
