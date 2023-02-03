@@ -21,6 +21,8 @@ define audio.paulfirst="music/paulfirst.mp3"
 define audio.start="music/start.mp3"
 define audio.hotel="music/hotel.mp3"
 define audio.door="music/door.mp3"
+define audio.phone="music/phone.mp3"
+define audio.pp="music/pp.mp3"
 
 init:
     $ left2 = Position (xalign=0.2, yalign=1.1)
@@ -659,6 +661,41 @@ label start:
     john "but you can go and ask Mal to keep you company."
 
     john "I’ve seen him hanging around in the lobby just now."
+
+    c "But i wanted to do it with you..."
+
+    john "And I don't want to."
+
+    pause 2
+
+    play music phone
+
+    show cyn smile2 with dissolve
+
+    pause 4
+
+    c "Who is it?"
+
+    john "Do you think I know?"
+
+    pause 2
+
+    c "I think It's you they're calling."
+
+    jo "Obviously this is for me..."
+
+    john "I'll take."
+
+    hide cyntia
+    play music pp
+    scene black
+ 
+    show bg phone with dissolve
+    stop music 
+
+    pause 1
+
+    john "Hello?"
 
     return
 
