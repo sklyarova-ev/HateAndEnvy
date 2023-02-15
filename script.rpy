@@ -9,6 +9,7 @@ define g = Character ('George', color="#802222")
 define e = Character ('???', color="#ffffff")
 define john = Character ('John', color="#ffffff")
 define c = Character ('Cynthia', color="#704709")
+define y = Character ('Yoko', color="#14161c")
 
 
 define audio.car="music/car.mp3"
@@ -23,6 +24,9 @@ define audio.hotel="music/hotel.mp3"
 define audio.door="music/door.mp3"
 define audio.phone="music/phone.mp3"
 define audio.pp="music/pp.mp3"
+define audio.yoko="music/yoko.mp3"
+define audio.door="sounds/door.mp3"
+define audio.otk="music/otk.mp3"
 
 init:
     $ left2 = Position (xalign=0.2, yalign=1.1)
@@ -61,6 +65,7 @@ label start:
     j "{cps=10}{i}September 24,1967.{/i}"
     
 
+
     j "{cps=25}The year preceding the release of the Magical Mystery Tour album promises to be stormy."
 
     j "{cps=25}No one was jumping around trying to boss us around anymore."
@@ -87,19 +92,22 @@ label start:
 
     shoot the result and turn it into a film over which we will have full creative control"
 
-    stop music
-
     j "{cps=15}Without meaning"
 
     j "{cps=15}and without purpose"
 
+    stop music
+
     nvl clear
     window hide
 
+    scene black with dissolve
     scene bg sky
     with Dissolve(.25)
 
-    play music dream
+    play music birds
+
+    pause 2
 
     jo "We were waiting for good weather to continue shooting.{w=2} And finnaly the sun came out."
 
@@ -129,6 +137,8 @@ label start:
 
     jo "Or Paul will say it..."
 
+    pause 1
+
     jo "it doesn't matter,{w=2} the dialogue is predictable, unless it's a theatrical production of schizophrenics."
 
     jo "But sometimes, I doubt the adequacy of myself and the people around me."
@@ -142,7 +152,7 @@ label start:
     scene bg sky1
     with Dissolve(.25)
 
-    play music birds
+    pause 2
 
     jo "It's the same thing every day. But in the morning, as usual, everything will be forgotten."
 
@@ -160,7 +170,11 @@ label start:
 
     scene black with dissolve
 
+    pause 1
+
     jo "I closed my eyes, expecting to be able to get some sleep."
+
+    pause 2
 
     jo "I remember I had a classmate in elementary school"
 
@@ -183,6 +197,8 @@ label start:
     jo "Maybe I used to be the same"
 
     jo "A disgusting snob..."
+
+    pause 2
 
     jo "And then I heard a familiar voice from far away."
 
@@ -695,9 +711,223 @@ label start:
 
     pause 1
 
+    play music yoko
+
     john "Hello?"
+
+    e "Hi, John?"
+
+    john "Woman, who are you?"
+
+    jo "I heard a soft laugh on the phone."
+
+    john "Please, don't call me anymore."
+
+    y "John, this is Yoko."
+
+    jo "I'm surprised how she found out this phone number."
+
+    jo "Only Cynthia and a couple of people from the recording studio knew this number."
+
+    jo "It scared me and interested me..."
+
+    y "Don't be scared."
+
+    y "I didn't do anything to find out where you are now."
+
+    jo "I still can't figure out how you find out about everything, crazy girl."
+
+    y "Imagine."
+
+    y "I'm sorry, am I distracting you? How's your family?"
+
+    john "Cynthia arrived today."
+
+    john "I didn't expect this, I thought she would arrive earlier."
+
+    john "But then I completely forgot about it."
+
+    john "Such a strange day."
+
+    y "She couldn't call you?"
+
+    john "No, you know, I am.."
+
+    y "I have strange days too."
+
+    y "Sometimes it seems that I still haven't woken up!"
+
+    y "It happens when you sleep during the day, not at night."
+
+    y "You get lost in space and time."
+
+    john "Yes... It's a very strange feeling."
+
+    pause 2
+
+    y "But still, it seems to me that night is the best time for an art creator"
+
+    y "Haven't you noticed that?"
+
+    y "For example, I always start creating at night when I want to sleep."
+
+    y "And these are always the best ideas."
+
+    jo "She won't let me say a word..."
+
+    john "I used to be able to come up with something with a sober head."
+
+    john "But right now I'm not doing anything good."
+
+    y "It's probably not safe to talk about such things on the phone to hotels."
+
+    john "I don't think anyone can eavesdrop on us right now."
+
+    jo "No one except Cyn of course..."
+
+    john "Everyone is resting now."
+
+    john "It is unlikely that some asshole is standing and listening to what John Lennon is talking about."
+
+    y "Oh!{w=1} Have the Beatles finished shooting the movie?"
+
+    john "Yes, we finished today."
+
+    y "And what do you think about this?"
+
+    y "Whose idea is this?"
+
+    jo "It's going to be a long interview."
+
+    john "It's our joint idea, but Paul, as always, puts more into it."
+
+    john "You know, well,{w=1} let it be."
+
+    scene black with dissolve
+    show bg ceiling with dissolve
+
+    pause 1
+
+    jo "We talked for about an hour."
+
+    jo "She talks so much."
+
+    show bg ceiling blur with dissolve
+
+    jo "Talks and talks..."
+
+    show bg ceiling blur2 with dissolve
+
+    jo "Talks and talks..."
+
+    scene black with dissolve
+
+    jo "I feel so bad today."
+
+    jo "I almost fell asleep..."
+
+    scene white with dissolve
+
+    stop music
+
+    c "John!"
+
+    show bg hallway with dissolve
+
+    show cyn brush with dissolve
+
+    c "Are you all right?"
+
+    play music otk
+
+    jo "I hung up the phone with a grunt of displeasure."
+
+    john "Yeah, I was just...{w=1} Thinking."
+
+    show cyn angry with dissolve
+
+    c "Seriously? And what are you up to?"
+
+    john "I was thinking about how tomorrow I would go to London to the studio and then I would sleep for five years."
+
+    show cyn angry2 with dissolve
+
+    c "Don't relax!"
+
+    c "Come on! Come on! Get ready, we're going!"
+
+    john "Where?"
+
+    show cyn smile3 with dissolve
+
+    c "What do you mean where? To a restaurant to celebrate of couse."
+
+    c "You're going, right?"
+
+    john "I don't know, in fact I do not really want to go there.?"
+
+    show cyn smile2 with dissolve
+
+    c "Oh, why? I think it will be fun there."
+
+    jo "I sighed massaging the bridge of my nose."
+
+    john "No, Cyn. This is another bollocks."
+
+    john "The guys just have nothing to do."
+
+    show cyn sad with dissolve
+
+    c "Are you sure you're not going?"
+
+    john "Cyn..."
+
+    menu:
+        "go with Cyn":
+            jump sogl
+
+        "stay in hotel":
+            jump otk
 
     return
 
+label sogl:
 
+    c "It wasn't hard to persuade you."
+
+    jo "She giggled."
+
+    return
+
+label otk:
+
+    john "I said I didn't want to. What's not clear here?"
+
+    c "You know, I'll be uncomfortable there alone..."
+
+    john "And then why did you come here at all?"
+
+    show cyn cry with dissolve
+
+    pause 1
+
+    "You're cruel, John."
+
+    pause 1
+
+    stop music
+
+    hide cyntia with dissolve
+    play sound door
+    scene black with dissolve
+
+    show bg hallway with dissolve
+
+    pause 2
+
+    jo "damn."
+
+    play music otk
+
+    return
 

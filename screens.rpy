@@ -384,7 +384,18 @@ init python:
                 self.x = -x /self.paramod
                 self.y = -y /self.paramod
                 renpy.redraw(self, 0)
-
+screen start_text():
+    text("START"):
+        xalign 0.3 yalign 0.1
+screen preferences_text():
+    text("SETTINGS"):
+        xalign 0.3 yalign 0.2
+screen load_text():
+    text("LOAD"):
+        xalign 0.3 yalign 0.3
+screen quit_text():
+    text("EXIT"):
+        xalign 0.3 yalign 0.4
 screen main_menu():
 
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
@@ -398,15 +409,38 @@ screen main_menu():
     add TrackCursor("gui/main_menu_C.png", 30)
     add TrackCursor("gui/main_menu_D.png",7)
 
-    imagemap:
+    imagebutton:
+        xalign 0.4 yalign 0.1
         idle "gui/menu_normal.png"
-        hover "gui/menu_haver.png"
-
-        hotspot (371, 32, 728, 741) action Start ()
-        hotspot (337, 137, 620, 758) action ShowMenu ("preferences")
-        hotspot (487, 241, 517, 758) action ShowMenu ("load")
-        hotspot (490, 323, 438, 753) action Quit (confirm=True)
-        hotspot (0, 885, 484, 371) action ShowMenu ("help")
+        hovered Show("start_text")
+        unhovered Hide("start_text")
+        action Start()
+    imagebutton:
+        xalign 0.4 yalign 0.2
+        idle "gui/menu_normal1.png"
+        hovered Show("preferences_text")
+        unhovered Hide("preferences_text")
+        action ShowMenu ("preferences")
+    imagebutton:
+        xalign 0.4 yalign 0.3
+        idle "gui/menu_normal2.png"
+        hovered Show("load_text")
+        unhovered Hide("load_text")
+        action ShowMenu ("load")
+    imagebutton:
+        xalign 0.4 yalign 0.4
+        idle "gui/menu_normal3.png"
+        hovered Show("quit_text")
+        unhovered Hide("quit_text")
+        action Quit(confirm=True)
+    imagebutton:
+        xalign 0.5 yalign 0.1
+        idle "gui/menu_normal4.png"
+        action None
+    imagebutton:
+        xalign 0.0 yalign 1.0
+        idle "gui/menu_normal5.png"
+        action ShowMenu ("help")
 
 
 style main_menu_frame is empty
