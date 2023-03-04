@@ -3,7 +3,7 @@
 # Определение персонажей игры.
 define j = Character (None,kind=nvl)
 define jo = Character (None,kind=adv)
-define p = Character ('Paul', color="#484a6e")
+define p = Character ('Paul', color="#041c21")
 define r = Character ('Ringo', color="#7d3472")
 define g = Character ('George', color="#802222")
 define e = Character ('???', color="#ffffff")
@@ -27,6 +27,9 @@ define audio.pp="music/pp.mp3"
 define audio.yoko="music/yoko.mp3"
 define audio.door="sounds/door.mp3"
 define audio.otk="music/otk.mp3"
+define audio.water="sounds/water.mp3"
+define audio.paul2="music/paul2.mp3"
+define audio.water2="sounds/water2.mp3"
 
 init:
     $ left2 = Position (xalign=0.2, yalign=1.1)
@@ -54,6 +57,11 @@ label splashscreen:
     return 
 
 label start:
+
+
+    scene bg eum with dissolve
+
+    pause 1
 
     scene bg room
     with Dissolve(.10)
@@ -143,12 +151,17 @@ label start:
 
     jo "But sometimes, I doubt the adequacy of myself and the people around me."
 
+    pause 1
+
     jo "I think I'm feeling a little worse today.{w=2} probably the sun baked."
+
+    pause 1
 
     jo "I've been on my feet all day."
 
     jo "if only I could sit down somewhere..."
 
+    scene black with dissolve
     scene bg sky1
     with Dissolve(.25)
 
@@ -395,8 +408,9 @@ label start:
 
     scene bg town
     with Dissolve(.25)
-    show paul smile
-    with Dissolve(.25)
+    show paul smile with dissolve
+
+    pause 1
 
     p "And finally you're here!"
 
@@ -408,27 +422,23 @@ label start:
 
     john "I'm hungry and dizzy."
 
-    show paul angry
-    with Dissolve(.25)
+    show paul angry with dissolve
 
     p "Really? Cynthia was a little worried, you know."
 
     jo "Paul looked upsed and I could feel his fears."
 
-    show paul angry2
-    with Dissolve(.25)
+    show paul angry2 with dissolve
 
     p "I'm tired of other people's questions"
 
     p "Did I deserve it?"
 
-    show paul smile3
-    with Dissolve(.25)
+    show paul smile3 with dissolve
 
     p "But anyway, we're done!{w=1} I'm so glad."
 
-    show paul smileright
-    with Dissolve(.25)
+    show paul smileright with dissolve
    
     p "But we'll have to go back to London tonight and work again tomorrow..."
 
@@ -459,8 +469,7 @@ label start:
 
     play music paulfirst
 
-    show paul smile
-    with Dissolve(.25)
+    show paul smile with dissolve
 
     p "Mel offered to celebrate this event in a restaurant."
 
@@ -468,8 +477,7 @@ label start:
 
     p "No one has the strength to have fun..."
 
-    show paul smile3
-    with Dissolve(.25)
+    show paul smile3 with dissolve
 
     p "Rings said he would spend the whole evening on the floor with an ice pack on his forehead."
 
@@ -480,15 +488,13 @@ label start:
 
     p "What about you?"
 
-    show paul brush
-    with Dissolve(.25)
+    show paul brush with dissolve
 
     p "Of course I don't want to force you..."
 
     jo "I sighed"
 
-    show paul brush4
-    with Dissolve(.25)
+    show paul brush4 with dissolve
 
     john "Okay...{w=1}It's all right.{w=1} I can't miss this opportunity."
 
@@ -504,10 +510,9 @@ label start:
 
     jo "If no one has the strenght, then why arrange this celebration?"
 
-    show bg sky evening
-    with Dissolve(.25)
+    show bg sky evening with dissolve
 
-    pause 1
+    pause 2
 
     jo "I'm wondering what it will look like."
 
@@ -521,8 +526,8 @@ label start:
 
     pause 2
 
-    show bg hotel hallway evening
-    with Dissolve(.25)
+    scene black with dissolve
+    show bg hotel hallway evening with dissolve
 
     jo "In recent years, people have become obsessed with minimalism and cubism."
 
@@ -882,16 +887,18 @@ label start:
 
     john "Cyn..."
 
+    pause 1
+
     menu:
         "go with Cyn":
-            jump sogl
+            jump bad
 
         "stay in hotel":
-            jump otk
+            jump normal
 
     return
 
-label sogl:
+label bad:
 
     c "It wasn't hard to persuade you."
 
@@ -899,7 +906,7 @@ label sogl:
 
     return
 
-label otk:
+label normal:
 
     john "I said I didn't want to. What's not clear here?"
 
@@ -911,7 +918,7 @@ label otk:
 
     pause 1
 
-    "You're cruel, John."
+    c "You're cruel, John."
 
     pause 1
 
@@ -925,9 +932,371 @@ label otk:
 
     pause 2
 
-    jo "damn."
+    jo "Damn..."
+
+    jo "I took out a ciggarette from my pocket and lit it."
+
+    scene black with dissolve
+    scene bg ceiling1 with dissolve
+
+    pause 2
+
+    jo "What a terrible interior here after all."
+
+    pause 2
+
+    play music phone
+
+    pause 1
+
+    jo "No, are y'll serious?!"
+
+    pause 1
+
+    jo "This is bullying."
+
+    jo "With a heaviness in my knees, I stood up."
+
+    play music pp
+    show bg phone with dissolve
+    play music yoko 
+
+    pause 1
+
+    y "John, will I see you?"
+
+    john "Fuck, Yoko.{w=1} I don't know."
+
+    y "I mean, you're going back to London tomorrow..."
+
+    pause 1
+
+    john "Yoko, please..."
+
+    y "What?"
+
+    play music pp
+    scene black with dissolve
+    stop music
+
+    jo "I hung up the phone."
+
+    jo "I don't want to talk to anyone."
+
+    pause 1
+
+    jo "And I don't want to sleep anymore."
+
+    jo "And what's the point already?"
+
+    jo "I don't want to go sleep for a few hours"
+
+    jo "and wake up from the fact that someone wakes me up."
+
+    pause 1
+
+    jo "It almost sounds like a rhyme."
+
+    pause 1
+
+    show bg hallway with dissolve
+
+    pause 1
+
+    play music door
+    scene black with dissolve
+    show bg hotel hallway night with dissolve
 
     play music otk
 
+    pause 2
+
+    jo "So quiet..."
+
+    pause 1
+
+    jo "It was only recently light and darkened so quickly."
+
+    scene black with dissolve
+    show bg hotel night with dissolve
+
+    jo "And the hotel looks disgustiong too."
+
+    jo "Why didn't I become a designer?"
+
+    jo "Although, I've never been interested in it."
+
+    scene black with dissolve
+    show bg sky night with dissolve
+
+    jo "If it wasn't for the music, I would have died on the port of Liverpool."
+
+    jo "It's for the best."
+
+    jo "I would have lived a miserable life with Mimi."
+
+    scene black with dissolve
+
+    pause 1
+
+    jo "I saw a small fountain."
+
+    jo "It shone modestly against the background of a dark garden."
+
+    jo "I wanted to wet my legs and not piss myself."
+
+    pause 1
+
+    play sound water
+    show bg legs water with dissolve
+
+    pause 1
+
+    jo "I've always loved water."
+
+    jo "As a child, I learned to swim very quickly and I still like it."
+
+    jo "I was fishing with my uncle and I went into the water."
+
+    jo "I walked and walked and accidentally stepped on a deep hole."
+
+    jo "I started panic, afraid that I would drown,"
+
+    jo "I started waving my arms."
+
+    jo "And at one point I just swam."
+
+    play sound water
+    scene red with dissolve
+    scene bg legs water2 with dissolve
+
+    play music paul2
+
+    jo "!!!"
+
+    jo "I screamed."
+
+    john "WHAT THE FUCK?!"
+
+    scene black with dissolve
+    show paul waterfalls with dissolve
+
+    pause 1
+
+    show paul waterfalls1 with dissolve
+
+    p "Are you scared?"
+    
+    jo "he laughed."
+
+    show paul waterfalls3 with dissolve
+
+    p "Sorry, I didn't mean to."
+
+    show paul waterfalls with dissolve
+
+    john "AND WHAT ARE YOU LAUGHING AT?!"
+
+    john "It's not funny, I was really scared!"
+
+    john "I could have hit you!"
+
+    show paul waterfalls3 with dissolve 
+
+    pause 1
+
+    show paul waterfalls with dissolve 
+
+    john "Idiot! Idiot!"
+
+    jo "I started pushing him."
+
+    show paul waterfalls1 with dissolve 
+
+    p "Stop it."
+
+    p "You didn't come."
+
+    p "Why?"
+
+    show paul waterfalls3 with dissolve 
+
+    john "I told you I don't want to go for such bollocks as this."
+
+    show paul waterfalls2 with dissolve 
+
+    p "No, you didn't say that."
+
+    jo "Oops."
+
+    show paul waterfalls3 with dissolve
+
+    john "Well, then I wanted to say it."
+
+    show paul waterfalls2 with dissolve 
+
+    p "And then why didn't you say it?"
+
+    show paul waterfalls3 with dissolve 
+
+    pause 1
+
+    john "Paul."
+
+    john "Fuck off."
+
+    scene black with dissolve
+    show bg legs water2 with dissolve
+
+    pause 4
+
+    p "John."
+
+    scene black with dissolve
+    show paul waterfalls3 with dissolve
+
+    john "What do you want?"
+
+    scene black with dissolve
+    show kisshaha with dissolve
+
+    jo "Paul grabbed my shirt and moved closer."
+
+    jo "..."
+
+    jo "I was a little embarrassed getting ready to ask what the fuck is he doing."
+
+    scene black with dissolve
+
+    play sound water2
+
+    show mclennon with dissolve
+
+    pause 1
+
+    jo "I didn't understand what happened, but after a second I looked at this moron and realized."
+
+    john "Asshole!"
+
+    jo "He burst into hysterical laughter."
+
+    john "Run!"
+
+    scene black with dissolve
+
+    jo "I quickly ran up on all fours"
+
+    jo "And grabbed his leg."
+
+    p "Wait!"
+
+    play sound water2
+
+    pause 1
+
+    jo "I was scared thinking that I had hit his head on the edge of the fountain."
+
+    pause 1
+
+    jo "But he quickly came to his senses."
+
+    show mclennon2 with dissolve
+
+    pause 1
+
+    jo "Now I laughed too."
+
+    show mclennon1 with dissolve
+
+    p "You know, I came to this party."
+
+    p "I ate, drank a little and then left."
+
+    john "It's great."
+
+    show mclennon3 with dissolve
+
+    p "No, Robert was there"
+
+    p "and before that I had a little quarrel with him."
+
+    john "Who's Robert?"
+
+    p "Fraser."
+
+    jo "I didn't have much contact with Robert."
+
+    jo "I don't really like the society of avant-garde artist."
+
+    jo "And he also doesn't have funny jokes."
+
+    jo "But Paul in interested in him."
+
+    jo "And Robert follows him like a dog."
+
+    john "Oh..."
+
+    pause 1
+
+    p "Cyn also pestered me with questions and complained that you didn't come."
+
+    scene mclennon2 with dissolve
+
+    p "I'm just sick of it."
+
+    pause 2
+
+    p "Well, actually I left because it was boring there."
+
+    pause 1
+
+    scene mclennon1 with dissolve
+
+    p "And you weren't there."
+
+    john "I never thought that the happy and popular Paul McCartney would be bored without the loser Lennon."
+
+    pause 1
+
+    scene black with dissolve 
+    scene bg sky night with dissolve
+
+    p "Why would you think?"
+
+    pause 1
+
+    john "Because you're obviously drunk."
+
+    jo "He laughed and almost completely fell into the water."
+
+    pause 1
+
+    p "Eyyy, this water smells like algae!"
+
+    p "And I stepped on some green dot with my palm."
+
+    p "And there's a dead fly floating around here..."
+
+    jo "He took this fly by the wings and the fat body broke off and fell back into the water."
+
+    john "It died twice."
+
+    p "Nooo! Poor insect!"
+
+    john "Bury it and forget it."
+
+    p "It sounds like the title of a typical The Rolling Stones song."
+
+    scene bus side with dissolve
+
+    jo "k"
+
     return
 
+label bus:
+
+    scene bus night with dissolve
+
+    jo "k"
+
+    return

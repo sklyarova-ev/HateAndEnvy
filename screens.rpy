@@ -409,29 +409,38 @@ screen main_menu():
     add TrackCursor("gui/main_menu_C.png", 30)
     add TrackCursor("gui/main_menu_D.png",7)
 
+screen main_menu():
+
+    ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
+    ## заменять этот.hotspot (784, 28, 1067, 1077) action ShowMenu ("about")
+    tag menu
+
+    style_prefix "main_menu"
+
+    add TrackCursor("gui/main_menu_A.png",20)
+    add TrackCursor("gui/main_menu_B.png",13)
+    add TrackCursor("gui/main_menu_C.png", 30)
+    add TrackCursor("gui/main_menu_D.png",7)
+
     imagebutton:
-        xalign 0.4 yalign 0.1
+        xalign 0.3 yalign 0.1
         idle "gui/menu_normal.png"
-        hovered Show("start_text")
-        unhovered Hide("start_text")
+        hover "gui/menu_hav.png"
         action Start()
     imagebutton:
-        xalign 0.4 yalign 0.2
+        xalign 0.3 yalign 0.2
         idle "gui/menu_normal1.png"
-        hovered Show("preferences_text")
-        unhovered Hide("preferences_text")
+        hover "gui/menu_hav1.png"
         action ShowMenu ("preferences")
     imagebutton:
-        xalign 0.4 yalign 0.3
+        xalign 0.3 yalign 0.3
         idle "gui/menu_normal2.png"
-        hovered Show("load_text")
-        unhovered Hide("load_text")
+        hover "gui/menu_hav2.png"
         action ShowMenu ("load")
     imagebutton:
-        xalign 0.4 yalign 0.4
+        xalign 0.35 yalign 0.4
         idle "gui/menu_normal3.png"
-        hovered Show("quit_text")
-        unhovered Hide("quit_text")
+        hover "gui/menu_hav3.png"
         action Quit(confirm=True)
     imagebutton:
         xalign 0.5 yalign 0.1
@@ -441,6 +450,7 @@ screen main_menu():
         xalign 0.0 yalign 1.0
         idle "gui/menu_normal5.png"
         action ShowMenu ("help")
+
 
 
 style main_menu_frame is empty
