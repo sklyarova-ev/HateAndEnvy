@@ -895,7 +895,6 @@ label start:
 
         "stay in hotel":
             jump normal
-
     return
 
 label bad:
@@ -1288,14 +1287,6 @@ label normal:
     p "It sounds like the title of a typical The Rolling Stones song."
 
     scene bus side with dissolve
-
-    jo "k"
-
-    return
-
-label bus:
-
-    scene bus night with dissolve
 
     jo "k"
 
