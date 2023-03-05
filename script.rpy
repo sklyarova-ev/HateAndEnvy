@@ -58,40 +58,40 @@ label start:
     
     window hide
     
-    j "{cps=10}{i}September 24,1967.{/i}"
+    j "{cps=10}{i} September 24, 1967 {/i}"
     
 
-    j "{cps=25}The year preceding the release of the Magical Mystery Tour album promises to be stormy."
+    j "{cps=25} The months leading up to the release of the Magical Mystery Tour record promise to be stormy."
 
-    j "{cps=25}No one was jumping around trying to boss us around anymore."
+    j "{cps=25} Brian is dead, so there's no one left to supervise us or boss us around."
 
-    j "{cps=25}The Beatles' use of psychedelics, such as LSD, reached it's peak that summer."
+    j "{cps=25} Since touring is out of the question, we have complete artistic freedom in the studio, where we can meticulously compose our songs."
 
-    j "{cps=25}And, according to author lan, this led us tp a lack of common sense in our recording,
+    j "{cps=25} Our acid use reached its peak in the summer of 1967, and this led us to a lack of common sense in our music, 
+    
+    as we experimented a lot with random sound effects."
 
-     as we used randomess and sound effects, experiments."
+    j "{cps=25} George Martin, our record producer, decided to suspend us from work for a while,
 
-    j "{cps=25}George Martin, our produser of the band, dicided to distance us from the work for a while,
+    saying that most of the takes for the Magical Mystery Tour were \"disorganized chaos\"."
 
-    saying that most of the recording of the Magical Mystery Tour was \"disorganized chaos\"."
+    j "{cps=25} So, we've moved on to film production."
 
-    j "{cps=25}Since touring is out of the question, we have freedom in the studio. Careful tuning of our songs."
+    j "{cps=25} The Magical Mystery Tour project is Paul's attempt to bring all our ideas to life."
 
-    j "{cps=25}Magical Mystery Tour project is Paul's attempt to literally bring all our ideas to life."
+    j "{cps=25} We are only half aware of what we want, and the full picture won't emerge until we try everything."
 
-    j "{cps=25}We half knew what we wanted and half didn't know until we tried everything."
+    j "{cps=25} The only concrete thought we seem to have is to be different."
 
-    j "{cps=25}The only concrete thought that seemed to be in our head was to be different."
+    j "{cps=25} According to the plan, the Beatles and friends are driving around the British countryside on a magical bus. 
 
-    j "{cps=25}The Beatles will drive around the British countruside eith their friends,
-
-    shoot the result and turn it into a film over which we will have full creative control"
+    This wild ride is being shot and turned into a film under our full creative control"
 
     stop music
 
-    j "{cps=15}Without meaning"
+    j "{cps=15} Without meaning"
 
-    j "{cps=15}and without purpose"
+    j "{cps=15} and without purpose..."
 
     nvl clear
     window hide
@@ -101,90 +101,90 @@ label start:
 
     play music dream
 
-    jo "We were waiting for good weather to continue shooting.{w=2} And finnaly the sun came out."
+    jo "We've been waiting for the skies to clear to continue filming. {w=2} And finally, the sun has come out."
 
-    jo "It's already 6 o'clock in the evening and it's shining like day."
+    jo "It's already 6 p.m., but it's as light as day."
 
-    jo "Maybe it's a long day? The solstice maybe."
+    jo "Maybe today's the longest day of the year? The solstice."
 
-    jo "Although no, definitly not in September."
+    jo "No, definitely not in September."
 
-    jo "But maybe the sun also lives its own life."
+    jo "Maybe the sun simply decided to live its own life."
 
-    jo "Why does even this one have its own schedule?"
+    jo "If you think about it, why is even the sun supposed to have a schedule?"
 
-    jo "Nature has a schedule, animals and humans too."
+    jo "Nature has a schedule, and so do animals and humans."
 
     jo "In any case, we haven't taken a single break since we started working in the morning."
 
-    jo "It seems I haven't gone that far,{w=2} but I don't know how much time has passed."
+    jo "I don't think I've gone very far away from the set, {w=2} but I don't know how long I'm walking."
 
-    jo "I wonder if the guys are looking for me?"
+    jo "I wonder if the guys are looking for me."
 
-    jo "They probably didn't even notice it, but they were informed by the operators."
+    jo "They probably have not even noticed, unless the operators told them I've walked away."
 
-    jo "And then they'll say-"
+    jo "If that's the case, then they'll say-"
 
-    jo "What the hell, John, can you spare some time for work? Because you're not doing anything! We're actually tired too! blah-blah-blah"
+    jo "What the hell, John? Could you take a little time to work? Because you're not doing anything! We're tired too! Blah-blah-blah."
 
-    jo "Or Paul will say it..."
+    jo "Or it'll be Paul who says it..."
 
-    jo "it doesn't matter,{w=2} the dialogue is predictable, unless it's a theatrical production of schizophrenics."
+    jo "Actually, it doesn't matter who it'll be, {w=2} the phrases are the same anyway, unless it's a theatrical production of schizophrenics."
 
-    jo "But sometimes, I doubt the adequacy of myself and the people around me."
+    jo "But sometimes I doubt the sanity of mine and others."
 
-    jo "I think I'm feeling a little worse today.{w=2} probably the sun baked."
+    jo "Damn, I'm feeling a little worse than usual today.{w=2} Probably, I've got a sunstroke."
 
-    jo "I've been on my feet all day."
+    jo "Besides, I've been on my feet all day."
 
-    jo "if only I could sit down somewhere..."
+    jo "If only I could have a seat somewhere..."
 
     scene bg sky1
     with Dissolve(.25)
 
     play music birds
 
-    jo "It's the same thing every day. But in the morning, as usual, everything will be forgotten."
+    jo "It's the same thing every day, but the next morning everything is always forgotten."
 
-    jo "Sometimes it feels like everything around me is a dream"
+    jo "Sometimes I feel like it's all just a dream."
 
-    jo "But in fact everything is real."
+    jo "But, in fact, it's real."
 
-    jo "I would like to take off, hear the sound of clouds and breathe fresh air through my nose."
+    jo "I wish I could levitate myself and soar into the sky, hear the sound of clouds and breathe fresh air."
 
-    jo "I could have done it, but l would have had to get up and move"
+    jo "But even if I could, I don't think I would find the strength to get up and move at the moment."
 
-    jo "lf they want to kill me, then let them do it now."
+    jo "And even if they come to kill me, so be it."
 
-    jo "Why prolong the torture..."
+    jo "Why prolong this torture of existence..."
 
     scene black with dissolve
 
-    jo "I closed my eyes, expecting to be able to get some sleep."
+    jo "I close my eyes in the hope of taking a nap."
 
-    jo "I remember I had a classmate in elementary school"
+    jo "I think of the classmate I had in elementary school."
 
-    jo "who claimed that he could jump five meters and almost take off."
+    jo "He claimed he could jump five meters and almost take off."
 
-    jo "This man had a cheeky, glossy face with small piggy eyes swollen with fat."
+    jo "This kid had a cheeky glossy face swollen with fat. Small piggy eyes."
 
-    jo "A shrill, high-pitched voice and a lot of dandruff scattered over the shoulders of a dark blue striped suit."
+    jo "A shrill, high-pitched voice. A lot of dandruff scattered over his shoulders clad in a dark blue striped suit."
 
-    jo "His legs and arms were as short as two balloons."
+    jo "His legs and arms were as short as four balloons."
 
-    jo "If he knew and could feel how other children hate and curse,"
+    jo "If only he had known how much the other children had hated and cursed him,"
 
-    jo "he should have drowned in this agonizing childish hatred."
+    jo "He would have sunk into the ground under the pressure of this agonizing childish hatred."
 
-    jo "To this day, when I remember him, my eyes darken and my heart aches."
+    jo "To this day, whenever I think of him, my eyes get blurry with anger and my heart beats furiously."
   
-    jo "Maybe he was lying to attract other guys to talk with him."
+    jo "His lies were probably aimed at becoming popular with the other guys."
 
-    jo "Maybe I used to be the same"
+    jo "Perhaps, I used to be just like him."
 
-    jo "A disgusting snob..."
+    jo "A disgusting egomaniac..."
 
-    jo "And then I heard a familiar voice from far away."
+    jo "Suddenly, I hear a familiar voice from afar."
 
     scene bg eum
     show eum
@@ -192,9 +192,9 @@ label start:
 
     stop music
 
-    e "hey!"
+    e "Hey!"
 
-    e "heeey!"
+    e "Heeey!"
 
     scene bg sky2 evening
     with Dissolve(.25)
@@ -202,23 +202,23 @@ label start:
     show ringo angry
     with Dissolve(.25)
 
-    r "What the fuck, dude"
+    r "What the fuck, mate?"
 
     r "What are you doing here?"
 
-    jo "l forgot that dreams can become true."
+    jo "I forgot that dreams could become real."
 
     show ringo smile
     with Dissolve(.25)
     
     play music rg
 
-    r "You're taking a break, right?"
+    r "I see you're taking a break."
 
     show ringo smile4
     with Dissolve(.25)
 
-    r "ln any case, some have gone crazy, you know."
+    r "Someone has got mad about your absence, you know."
 
     show ringo smile2:
         xalign 0.8 yalign 1.1
@@ -231,16 +231,16 @@ label start:
     show geo smile1 at left2
     with Dissolve(.25)
 
-    g "some didn't even notice."
+    g "someone hasn't even noticed."
 
-    jo "ls that supposed to upset me or make me happy?"
+    jo "Is that supposed to upset me or make me happy?"
 
-    g "You wander around the neighborhood"
+    g "You're wandering around the neighbourhood"
 
     show ringo smile at right2
     with Dissolve(.25)
 
-    r "don't let other work"
+    r "not letting the others work"
 
     show ringo smile2
     with Dissolve(.25)
@@ -248,15 +248,15 @@ label start:
     show geo smile2
     with Dissolve(.25)
 
-    g "and don't do anything!"
+    g "and not doing anything!"
 
     jo "..."
 
-    jo "they were not pursued by intelligent thoughts..."
+    jo "They are not followed by intelligent thoughts..."
 
     show john
 
-    john "How can l interfere if l'm not doing anything?"
+    john "How can I interfere if I'm not doing anything?"
 
     show ringo smile
     show geo smile
@@ -264,22 +264,22 @@ label start:
 
     r "Hey, why so rude?"
 
-    g "lt wasn't rude, it was aggressive."
+    g "It's not rude, it's aggressive."
 
     show ringo smile4
     show geo smile2
 
-    r "lt wasn't aggressive, it was John."
+    r "It's not aggressive, it's John."
 
     john "HA!"
 
-    jo "l didn't want to offend them, so l made a sad face."
+    jo "I'm not in the mood for throwing any insults at them, so I've simply made an annoyed face."
 
     show ringo angry
 
     r "C'mon, we're wasting time now too."
 
-    r "l don't want to become like John!"
+    r "I don't want to become like John!"
 
     show geo smile
     with Dissolve(.25)
@@ -288,27 +288,27 @@ label start:
 
     r "Yes!"
 
-    r "And sometimes l have nightmares..."
+    r "And sometimes I have nightmares..."
 
     show ringo smile
     with Dissolve(.25)
 
-    r "Anyway, are you going to spend the night here?" 
+    r "Anyway, let's go back, John, or are you going to spend the night here?" 
 
-    john "l'm going to live here."
+    john "No, I'm going to live here."
 
     show geo smile1
     with Dissolve(.25)
 
-    g "And you're going to sleep underground and piss in the bushes?"
+    g "Are you going to sleep on the ground and piss in the bushes?"
 
-    john "Yes, that's right where you're standing"
+    john "Yes, right where you're standing"
 
-    "They were smilling their crazy smile"
+    "They are smiling their crazy smiles"
 
-    "What a pointless conversation"
+    "What a daft exchange"
 
-    "But l laughed..."
+    "But it made me laugh..."
 
     scene bg eum
     with Dissolve(.25)
@@ -318,25 +318,25 @@ label start:
 
     jo "Ha..."
 
-    jo "Was l really dreaming..."
+    jo "Was I really dreaming..."
 
     jo "Nice guys"
 
-    jo "With a heaviness in my legs and in my soul, i went back."
+    jo "With heaviness in my legs and my soul, I follow them back."
 
     jo "If it hadn't been for that scream, a peaceful evening would have ended in a quarrel today."
 
-    jo "Eventually I had to show up and speak out." 
+    jo "Eventually, I had to show up and speak out" 
 
-    jo "And any of my statements..."
+    jo "and any of my statements..."
 
-    jo "My mind has always understood that the people close to me are very good and they are not at all to blame that they had to get to know me."
+    jo "Intellectually, I've always understood that my close people are very good and not at all to blame for meeting me."
 
-    jo "But, on the other way, I treated myself very well."
+    jo "But, on the other hand, I treated myself very well."
 
-    jo "The conclusion comes by itself: incompatibility."
+    jo "The conclusion suggests itself: incompatibility."
 
-    jo "With the closest realtionship - a grandiose incompatibility!"
+    jo "Speaking of my closest relationship, a grandiose incompatibility even!"
 
     scene bg eum
     with Dissolve(.25)
@@ -346,31 +346,31 @@ label start:
 
     play music people
 
-    jo "We walked for about 20 minutes"
+    jo "We've been walking for about 20 minutes."
 
-    jo "I've already been pestered by Mal with stupid questions."
+    jo "All the way Mal has been pestering me with stupid questions."
 
-    jo "My legs hurt and my stomach is empty..."
+    jo "My legs hurt. My stomach is empty..."
 
-    jo "I probably wouldn't have survived the war."
+    jo "I probably wouldn't survive the war if one began these days."
 
-    jo "Maybe I should start doing morning runs."
+    jo "Maybe I should start running in the mornings."
 
-    jo "Hah, if only I could wake up in the morning..."
+    jo "Hah, if only I could wake up early..."
 
-    jo "But I have to brag to myself, today I almost arrived on time!"
+    jo "Although I can be very proud of myself for today's morning - I arrived at the set almost on time!"
 
-    jo "Poor pepople getting up on time."
+    jo "Unfortunate are those who have to get up early daily."
 
-    jo "I hated it when my aunt Mimi woke me up in the morning."
+    jo "I hated it when my aunt Mimi woke me up for school."
 
-    jo "I wanted to hit her and myself."
+    jo "At those moments, I wanted to hit her and myself."
 
-    jo "This is the same as going to the bathroom when a person is washing!"
+    jo "To interrupt someone else's sleep is the same thing as walking into the bathroom when the other person's there washing!"
 
-    jo "Why the hell are you doing this?"
+    jo "Why the hell do this?"
 
-    jo "A hand touched my shoulder..."
+    jo "Someone's hand touches me on the shoulder..."
 
     stop music
     scene black with dissolve
@@ -382,11 +382,11 @@ label start:
     show paul smile
     with Dissolve(.25)
 
-    p "And finally you're here!"
+    p "Finally you're here!"
 
     play music paulfirst
 
-    p "What you been doing?"
+    p "What have you been doing?"
 
     jo "I'm confused, just not now, please..."
 
@@ -395,7 +395,7 @@ label start:
     show paul angry
     with Dissolve(.25)
 
-    p "Really? Cynthia was a little worried, you know."
+    p "Everybody was a little worried, you know."
 
     jo "Paul looked upsed and I could feel his fears."
 
@@ -446,7 +446,7 @@ label start:
     show paul smile
     with Dissolve(.25)
 
-    p "Mel offered to celebrate this event in a restaurant."
+    p "Mal offered to celebrate this event in a restaurant."
 
     p "Nothing grandiose, just to sit quietly and talk."
 
@@ -542,25 +542,25 @@ label start:
 
     show cyn angry with dissolve
 
-    c "It’s me. Cyn."
+    c "It's me. Cyn."
 
     jo "This woman knows how to scare people."
 
     john "Ah, crikey, Cyn, you made me jump."
 
-    john " For a moment I thought you were a fan breaking in or a ghost."
+    john "For a moment, I thought you were a fan breaking in or a ghost."
 
     show cyn smile with dissolve
 
-    jo "She giggled."
+    jo "She is giggling."
 
     john "Have you been hiding here or something?" 
 
     show cyn smile3 with dissolve
 
-    c "I’ve just got out of the bathroom. Sorry, I didn’t mean to frighten you." 
+    c "I've just got out of the bathroom. Sorry, I didn't mean to frighten you." 
 
-    john " Well, long time no see, hon. When did you get here?" 
+    john "Well, long time no see, hon. When did you get here?" 
 
     show cyn smile with dissolve
 
@@ -582,11 +582,11 @@ label start:
 
     john "We talked about it like three days ago."
 
-    john "You should’ve reminded me yesterday you were coming."
+    john "You should've reminded me yesterday you were coming."
 
     show cyn smile2 with dissolve
 
-    c "I want to."
+    c "I wanted to."
 
     c "But your line was engaged since our last call"
 
@@ -598,9 +598,9 @@ label start:
 
     john "Here. In my suite. Where else would I be?"
 
-    c "I don’t know. Why didn’t you respond then? Were you OK?"
+    c "I don't know. Why didn't you respond then? Were you OK?"
 
-    john "I didn’t hear anybody knocking."
+    john "I didn't hear anybody knocking."
 
     john "Probably, I was just too busy restoring my strength after doing me best at my starring secondary role in the oncoming hit Beatles movie."
 
@@ -608,15 +608,15 @@ label start:
 
     show cyn smile2 with dissolve
 
-    c "Oh, John, you aren’t taking acid again, are you?"
+    c "Oh, John, you aren't taking acid again, are you?"
 
-    john "Stop it, Cyn,{w=1} do me a favour."
+    john "Stop it, Cyn, {w=1} do me a favour."
 
-    john "If I wanted to answer stupid questions, I’d hold a press conference."
+    john "If I wanted to answer stupid questions, I'd hold a press conference."
 
     c "But still, are you?"
 
-    john "You know I’m done with it."
+    john "You know I'm done with it."
 
     john "I spent the whole evening...{w=1} meditating"
 
@@ -624,7 +624,7 @@ label start:
 
     jo "I sighed."
 
-    john "Just what Maharishi ordered on a hard day’s night, you know."
+    john "Just what Maharishi ordered on a hard day's night, you know."
 
     john "Nothing interesting, anyway."
 
@@ -636,13 +636,15 @@ label start:
 
     c "Julian even draw a comic of you performing on stage with the band."
 
-    c "He’s brought it here to show you."
+    c "He's brought it here to show you."
+
+    jo "There's no escape from Beatles fans even in the family."
 
     john "Where's him, by the way?"
 
     show cyn smile2 with dissolve
 
-    c "He’s sleeping in the next room. The road wore him out."
+    c "He's sleeping in the next room. The road wore him out."
 
     john "Don't you want to have some rest too?"
 
@@ -660,11 +662,11 @@ label start:
 
     john "but you can go and ask Mal to keep you company."
 
-    john "I’ve seen him hanging around in the lobby just now."
+    john "I've seen him hanging around in the lobby just now."
 
-    c "But i wanted to do it with you..."
+    c "But-"
 
-    john "And I don't want to."
+    john "No buts, Cyn, I'm tiered. Just give me some peace, okay? "
 
     pause 2
 
